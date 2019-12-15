@@ -1,3 +1,4 @@
+
 .container {
     display: flex;
     flex-direction: column;
@@ -9,4 +10,8 @@ mat-sidenav-container {
     mat-sidenav {
         padding: 1rem;
     }
+}
+
+.active-list-item {
+    color: red;
 }

@@ -13,17 +13,17 @@
 
     <mat-sidenav #sidenav mode="over" (click)="sidenav.toggle()">
       <mat-nav-list>
-        <mat-list-item routerLink="/">
-          <mat-icon>hotel</mat-icon>       
-          <a mat-list-item> Hotels </a>
+        <mat-list-item routerLink="/" routerLinkActive="active-list-item">
+          <mat-icon matListIcon>hotel</mat-icon>       
+          <a matLine> Hotels </a>
         </mat-list-item>
-        <mat-list-item routerLink="/flight">
-          <mat-icon>flight</mat-icon>       
-          <a mat-list-item> Flights </a>
+        <mat-list-item routerLink="/flight" routerLinkActive="active-list-item">
+          <mat-icon matListIcon>flight</mat-icon>       
+          <a matLine> Flights </a>
         </mat-list-item>
-        <mat-list-item routerLink="/car">
-          <mat-icon>directions_car</mat-icon>       
-          <a mat-list-item> Cars </a>
+        <mat-list-item routerLink="/car" routerLinkActive="active-list-item">
+          <mat-icon matListIcon>directions_car</mat-icon>       
+          <a matLine> Cars </a>
         </mat-list-item>
       </mat-nav-list>
     </mat-sidenav>
