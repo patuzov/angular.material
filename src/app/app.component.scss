@@ -1,8 +1,12 @@
-.content{
-    margin: 1rem;
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
-section {
-    button {
-        margin: 1rem;
+mat-sidenav-container {
+    flex: 1;
+
+    mat-sidenav {
+        padding: 1rem;
     }
 }

@@ -1,37 +1,34 @@
-<div class="content">
-  <section>
-    <h1>Simple Button</h1>
-    <button>Not Material Button</button>
-  </section>
-  <section>
-    <h1>Basic</h1>
-    <button mat-button>Basic Material button</button>
-    <button mat-button color="primary">Basic Primary button</button>
-    <button mat-button color="accent">Basic Seconday button</button>
-    <button mat-button color="warn">Basic Warning button</button>
-    <button mat-button disabled>Basic Disabled button</button>
-  </section>
-  <section>
-    <h1>Raised</h1>
-    <button mat-raised-button>Raised</button>
-    <button mat-raised-button color="primary">Raised primary</button>
-  </section>
-  <section>
-    <h1>Icon</h1>
-    <button mat-icon-button>
-      <mat-icon>cloud</mat-icon>
-    </button>
-    <button color="primary" mat-icon-button>
-      <mat-icon>cloud</mat-icon>
-    </button>
-  </section>
-  <section>
-    <h1>FAB</h1>
-    <button mat-fab>
-      <mat-icon>cloud</mat-icon>
-    </button>
-    <button mat-fab color="primary">
-      <mat-icon>cloud</mat-icon>
-    </button>
-  </section>
+<div class="container">
+  <mat-toolbar color="primary" (click)="sidenav.toggle()">
+    <mat-toolbar-row>
+      <button mat-icon-button>
+        <mat-icon>menu</mat-icon>
+      </button>
+
+      <span class="title">Cool Demo</span>
+    </mat-toolbar-row>
+  </mat-toolbar>
+
+  <mat-sidenav-container>
+
+    <mat-sidenav #sidenav mode="over" (click)="sidenav.toggle()">
+      <mat-nav-list>
+        <mat-list-item routerLink="/">
+          <mat-icon>hotel</mat-icon>       
+          <a mat-list-item> Hotels </a>
+        </mat-list-item>
+        <mat-list-item routerLink="/flight">
+          <mat-icon>flight</mat-icon>       
+          <a mat-list-item> Flights </a>
+        </mat-list-item>
+        <mat-list-item routerLink="/car">
+          <mat-icon>directions_car</mat-icon>       
+          <a mat-list-item> Cars </a>
+        </mat-list-item>
+      </mat-nav-list>
+    </mat-sidenav>
+
+    <router-outlet></router-outlet>
+
+  </mat-sidenav-container>
 </div>
