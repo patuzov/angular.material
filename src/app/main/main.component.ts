@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material';
+import { FilterDialogComponent } from '../filter-dialog/filter-dialog.component';
 
 @Component({
   selector: 'app-main',
@@ -7,11 +9,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
 
   hotels = ['Crowne Plaza', 'Kempinski', 'Vier Jahreszeiten', 'Ibis Budget']
 
   ngOnInit() {
+  }
+
+  filter(): void {
+    const dialogRef = this.dialog.open(FilterDialogComponent, {
+      data: {}
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(result);      
+      console.log('The dialog was closed');
+    });
   }
 
 }

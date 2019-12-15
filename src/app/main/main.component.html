@@ -1,3 +1,7 @@
 <app-hotel-search-item *ngFor="let item of hotels"
 [hotel]="item">
 </app-hotel-search-item>
+
+<button class="fab" mat-fab (click)="filter()">
+    <mat-icon>filter_list</mat-icon>
+</button>
