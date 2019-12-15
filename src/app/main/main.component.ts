@@ -9,6 +9,8 @@ export class MainComponent implements OnInit {
 
   constructor() { }
 
+  hotels = ['Crowne Plaza', 'Kempinski', 'Vier Jahreszeiten', 'Ibis Budget']
+
   ngOnInit() {
   }
 

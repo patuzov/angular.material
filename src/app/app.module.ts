@@ -7,12 +7,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './shared/material/material.module';
 import { ButtonsComponent } from './buttons/buttons.component';
 import { MainComponent } from './main/main.component';
+import { HotelSearchItemComponent } from './hotel-search-item/hotel-search-item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ButtonsComponent,
-    MainComponent
+    MainComponent,
+    HotelSearchItemComponent
   ],
   imports: [
     BrowserModule,
