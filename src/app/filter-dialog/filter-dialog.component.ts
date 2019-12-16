@@ -11,8 +11,11 @@ export class FilterDialogComponent implements OnInit {
   constructor(public dialogRef: MatDialogRef<FilterDialogComponent>,
     @Inject(MAT_DIALOG_DATA) public data: any) { }
 
-    filters = ['Air conditioning', 'Garage', 'Bar', 'Lift', 'Sauna', 'Restaurant'];
-    selectedOptions: string[] = [];
+    hotelFeatures = ['Air conditioning', 'Garage', 'Bar', 'Lift', 'Sauna', 'Restaurant'];
+    selectedHotelFeatures: string[] = [];
+    
+    roomFeatures = ['Bathtub', 'Cable TV', 'Desk', 'Safe'];
+    selectedRoomFeatures: string[] = [];
 
   ngOnInit() {
   }
@@ -22,7 +25,10 @@ export class FilterDialogComponent implements OnInit {
   }
 
   onSave(): void {
-    this.dialogRef.close(this.selectedOptions);
+    this.dialogRef.close({
+      hotelFeatures: this.selectedHotelFeatures,
+      roomFeatures: this.selectedRoomFeatures
+    });
   }
 
 }

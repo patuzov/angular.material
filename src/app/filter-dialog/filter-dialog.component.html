@@ -1,13 +1,33 @@
-<h1 mat-dialog-title>Filter</h1>
-<div mat-dialog-content>
-    <mat-selection-list [(ngModel)]="selectedOptions">
-        <mat-list-option *ngFor="let filter of filters" [value]="filter">
-          {{filter}}
-        </mat-list-option>
-      </mat-selection-list>
+<div class="container">
+    <h1 mat-dialog-title>Filter</h1>
+    <div mat-dialog-content>
+        <mat-expansion-panel expanded="true">
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    Hotel Features
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+            <mat-selection-list [(ngModel)]="selectedHotelFeatures">
+                <mat-list-option *ngFor="let filter of hotelFeatures" [value]="filter">
+                    {{filter}}
+                </mat-list-option>
+            </mat-selection-list>
+        </mat-expansion-panel>
+        <mat-expansion-panel expanded="true">
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    Room Features
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+            <mat-selection-list [(ngModel)]="selectedRoomFeatures">
+                <mat-list-option *ngFor="let filter of roomFeatures" [value]="filter">
+                    {{filter}}
+                </mat-list-option>
+            </mat-selection-list>
+        </mat-expansion-panel>
+    </div>
+    <div class="actions" mat-dialog-actions>
+        <button mat-button color="accent" (click)="onCancel()" cdkFocusInitial>CANCEL</button>
+        <button mat-button color="accent" (click)="onSave()">SAVE</button>
+    </div>
 </div>
-<div mat-dialog-actions>
-  <button mat-button (click)="onCancel()" cdkFocusInitial>CANCEL</button>
-  <button mat-button (click)="onSave()">SAVE</button>
-</div>
-

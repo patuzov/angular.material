@@ -7,7 +7,8 @@ import {
   MatCardModule,
   MatDividerModule,
   MatDialogModule,
-  MatListModule
+  MatListModule,
+  MatExpansionModule
 } from '@angular/material';
 
 
@@ -18,7 +19,8 @@ const modules = [
   MatCardModule,
   MatDividerModule,
   MatDialogModule,
-  MatListModule
+  MatListModule,
+  MatExpansionModule
 ];
 
 @NgModule({
