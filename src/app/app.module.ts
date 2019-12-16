@@ -10,6 +10,7 @@ import { MainComponent } from './main/main.component';
 import { HotelSearchItemComponent } from './hotel-search-item/hotel-search-item.component';
 import { FilterDialogComponent } from './filter-dialog/filter-dialog.component';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     BrowserAnimationsModule,
     FormsModule,
-    MaterialModule
+    MaterialModule,
+    HttpClientModule
   ],
   providers: [],
   entryComponents: [FilterDialogComponent],

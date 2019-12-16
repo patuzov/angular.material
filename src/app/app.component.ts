@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { OverlayContainer } from '@angular/cdk/overlay';
+import { MatIconRegistry } from '@angular/material';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
@@ -11,8 +13,18 @@ export class AppComponent {
 
   isDarkTheme = false;
 
-  constructor(private overlayContainer: OverlayContainer){
+  constructor(private overlayContainer: OverlayContainer,
+    private matIconRegistry: MatIconRegistry,
+    private domSanitizer: DomSanitizer) {
+      this.matIconRegistry.addSvgIcon(
+        'app_insights',
+        this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/img/appinsights.svg")
+      );
+      this.matIconRegistry.addSvgIcon(
+        'appservices',
+        this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/img/appservices.svg")
 
+      )
   }
 
   toggleTheme(): void {
