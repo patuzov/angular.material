@@ -13,6 +13,8 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { SettingsComponent } from './settings/settings.component';
+import { SearchBarComponent } from './search-bar/search-bar.component';
+import { DemoDatepickerComponent } from './demo-datepicker/demo-datepicker.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { SettingsComponent } from './settings/settings.component';
     MainComponent,
     HotelSearchItemComponent,
     FilterDialogComponent,
-    SettingsComponent
+    SettingsComponent,
+    SearchBarComponent,
+    DemoDatepickerComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +34,7 @@ import { SettingsComponent } from './settings/settings.component';
     FormsModule,
     MaterialModule,
     HttpClientModule,
-    DragDropModule 
+    DragDropModule
   ],
   providers: [],
   entryComponents: [FilterDialogComponent],
