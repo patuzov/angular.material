@@ -13,7 +13,10 @@ import {
   MatFormFieldModule,
   MatDatepickerModule,
   MatNativeDateModule,
-  MatInputModule
+  MatInputModule,
+  MatTableModule,
+  MatCheckboxModule,
+  MatSortModule
 } from '@angular/material';
 
 import { MAT_MOMENT_DATE_FORMATS, MomentDateAdapter } from '@angular/material-moment-adapter';
@@ -32,7 +35,10 @@ const modules = [
   MatSlideToggleModule,
   MatFormFieldModule,
   MatInputModule,
-  MatDatepickerModule
+  MatDatepickerModule,
+  MatTableModule,
+  MatCheckboxModule,
+  MatSortModule
 ];
 
 @NgModule({

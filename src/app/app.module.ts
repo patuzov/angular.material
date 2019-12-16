@@ -15,6 +15,7 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
 import { SettingsComponent } from './settings/settings.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
 import { DemoDatepickerComponent } from './demo-datepicker/demo-datepicker.component';
+import { TableComponent } from './table/table.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { DemoDatepickerComponent } from './demo-datepicker/demo-datepicker.compo
     FilterDialogComponent,
     SettingsComponent,
     SearchBarComponent,
-    DemoDatepickerComponent
+    DemoDatepickerComponent,
+    TableComponent
   ],
   imports: [
     BrowserModule,
