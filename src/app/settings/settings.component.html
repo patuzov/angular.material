@@ -1,0 +1,5 @@
+<h1>My favorit hotels</h1>
+<div cdkDropList class="list" (cdkDropListDropped)="drop($event)">
+    <div class="item" *ngFor="let hotel of hotels" cdkDrag>{{hotel}}</div>
+</div>
+<p>{{debug}}</p>

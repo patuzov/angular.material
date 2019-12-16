@@ -11,6 +11,8 @@ import { HotelSearchItemComponent } from './hotel-search-item/hotel-search-item.
 import { FilterDialogComponent } from './filter-dialog/filter-dialog.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { DragDropModule } from '@angular/cdk/drag-drop';
+import { SettingsComponent } from './settings/settings.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,8 @@ import { HttpClientModule } from '@angular/common/http';
     ButtonsComponent,
     MainComponent,
     HotelSearchItemComponent,
-    FilterDialogComponent
+    FilterDialogComponent,
+    SettingsComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +29,8 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserAnimationsModule,
     FormsModule,
     MaterialModule,
-    HttpClientModule
+    HttpClientModule,
+    DragDropModule 
   ],
   providers: [],
   entryComponents: [FilterDialogComponent],
