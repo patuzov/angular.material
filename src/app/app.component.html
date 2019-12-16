@@ -1,16 +1,23 @@
-<mat-toolbar color="primary">
-  <mat-toolbar-row>
-    <button mat-icon-button>
-      <mat-icon>cloud</mat-icon>
-    </button>
+<div [ngClass]="{'unicorn-dark-theme': isDarkTheme}">
+  <div class="mat-app-background">
+    <mat-toolbar color="primary">
+      <mat-toolbar-row>
+        <button mat-icon-button>
+          <mat-icon>cloud</mat-icon>
+        </button>
 
-    <span>Cool Demo</span>
+        <span>Cool Demo</span>
 
-    <span class="flexone"></span>
+        <span class="flexone"></span>
 
-    <button mat-icon-button>
-      <mat-icon>account_circle</mat-icon>
-    </button>
-  </mat-toolbar-row>
-</mat-toolbar>
-<router-outlet></router-outlet>
+        <mat-slide-toggle (change)="toggleTheme()">
+          Change theme
+        </mat-slide-toggle>
+        <button mat-icon-button>
+          <mat-icon>account_circle</mat-icon>
+        </button>
+      </mat-toolbar-row>
+    </mat-toolbar>
+    <router-outlet></router-outlet>
+  </div>
+</div>
