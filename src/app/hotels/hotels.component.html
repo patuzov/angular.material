@@ -1,0 +1,8 @@
+<div class="content">
+  <app-hotel-search-item [hotel]="hotel" *ngFor="let hotel of hotels">
+  </app-hotel-search-item>
+
+  <button class="stickyfab" mat-fab (click)="openFilterDialog()">
+    <span class="icon-breakfast"></span>
+  </button>
+</div>

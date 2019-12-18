@@ -1,0 +1,13 @@
+<button mat-raised-button color="primary"
+ [@temperatureTrigger]="buttonState"
+ (click)="toggleButtonState()"
+ >BUTTON</button>
+
+ <button mat-fab
+    (click)="toggleFab()">
+     <mat-icon
+     [@playStateTrigger]="playState"
+     (@playStateTrigger.done)="playStateAnimationDone()">
+         {{fabIcon}}
+     </mat-icon>
+ </button>

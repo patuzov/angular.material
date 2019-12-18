@@ -1,0 +1,126 @@
+@font-face {
+    font-family: 'fontello';
+    src: url('./assets/fonts/fontello.eot');
+    src: url('./assets/fonts/fontello.eot#iefix') format('embedded-opentype'),
+         url('./assets/fonts/fontello.svg#fontello') format('svg'),
+         url('./assets/fonts/fontello.woff2') format('woff2'),
+         url('./assets/fonts/fontello.woff') format('woff'),
+         url('./assets/fonts/fontello.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  .custom-icons {
+    font-family: 'fontello' !important;
+  }
+   
+   [class^="icon-"]:before, [class*=" icon-"]:before {
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+   
+    display: inline-block;
+    text-decoration: inherit;
+    color: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    /* opacity: .8; */
+   
+    /* For safety - reset parent styles, that can break glyph codes*/
+    font-variant: normal;
+    text-transform: none;
+   
+    /* fix buttons height, for twitter bootstrap */
+    line-height: 1em;
+   
+    /* Animation center compensation - margins should be symmetric */
+    /* remove if not needed */
+    margin-left: .2em;
+   
+    /* you can be more comfortable with increased icons size */
+    /* font-size: 120%; */
+   
+    /* Font smoothing. That was taken from TWBS */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+   
+    /* Uncomment for 3D effect */
+    /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+  }
+  
+  .icon-plus:before { content: '\e800'; } /* '' */
+  .icon-poi:before { content: '\e801'; } /* '' */
+  .icon-pool:before { content: '\e802'; } /* '' */
+  .icon-railwaystation:before { content: '\e803'; } /* '' */
+  .icon-region:before { content: '\e804'; } /* '' */
+  .icon-reload:before { content: '\e805'; } /* '' */
+  .icon-rooms:before { content: '\e806'; } /* '' */
+  .icon-search:before { content: '\e807'; } /* '' */
+  .icon-settings:before { content: '\e808'; } /* '' */
+  .icon-share:before { content: '\e809'; } /* '' */
+  .icon-sight:before { content: '\e80a'; } /* '' */
+  .icon-singlebed:before { content: '\e80b'; } /* '' */
+  .icon-star:before { content: '\e80c'; } /* '' */
+  .icon-subway:before { content: '\e80d'; } /* '' */
+  .icon-success:before { content: '\e80e'; } /* '' */
+  .icon-taxi:before { content: '\e80f'; } /* '' */
+  .icon-tennis:before { content: '\e810'; } /* '' */
+  .icon-tileview:before { content: '\e811'; } /* '' */
+  .icon-triangleleft:before { content: '\e812'; } /* '' */
+  .icon-triangleright:before { content: '\e813'; } /* '' */
+  .icon-warning:before { content: '\e814'; } /* '' */
+  .icon-water:before { content: '\e815'; } /* '' */
+  .icon-wellness:before { content: '\e816'; } /* '' */
+  .icon-wlan:before { content: '\e817'; } /* '' */
+  .icon-24h:before { content: '\e818'; } /* '' */
+  .icon-airport:before { content: '\e819'; } /* '' */
+  .icon-arrowdown:before { content: '\e81a'; } /* '' */
+  .icon-arrowleft:before { content: '\e81b'; } /* '' */
+  .icon-arrowright:before { content: '\e81c'; } /* '' */
+  .icon-arrowup:before { content: '\e81d'; } /* '' */
+  .icon-beach:before { content: '\e81e'; } /* '' */
+  .icon-breakfast:before { content: '\e81f'; } /* '' */
+  .icon-breakfastnot:before { content: '\e820'; } /* '' */
+  .icon-bus:before { content: '\e821'; } /* '' */
+  .icon-calendar:before { content: '\e822'; } /* '' */
+  .icon-cancellablefreeofcharge:before { content: '\e823'; } /* '' */
+  .icon-cancellablefreeofchargenot:before { content: '\e824'; } /* '' */
+  .icon-casino:before { content: '\e825'; } /* '' */
+  .icon-center:before { content: '\e826'; } /* '' */
+  .icon-city:before { content: '\e827'; } /* '' */
+  .icon-close:before { content: '\e828'; } /* '' */
+  .icon-creditcard:before { content: '\e829'; } /* '' */
+  .icon-creditcardfree:before { content: '\e82a'; } /* '' */
+  .icon-district:before { content: '\e82b'; } /* '' */
+  .icon-doctor:before { content: '\e82c'; } /* '' */
+  .icon-cartwithoutarrow:before { content: '\e82d'; } /* '' */
+  .icon-drink:before { content: '\e82e'; } /* '' */
+  .icon-factory:before { content: '\e82f'; } /* '' */
+  .icon-fair:before { content: '\e830'; } /* '' */
+  .icon-flag:before { content: '\e831'; } /* '' */
+  .icon-funnel:before { content: '\e832'; } /* '' */
+  .icon-gift:before { content: '\e833'; } /* '' */
+  .icon-golf:before { content: '\e834'; } /* '' */
+  .icon-gym:before { content: '\e835'; } /* '' */
+  .icon-harbour:before { content: '\e836'; } /* '' */
+  .icon-heart:before { content: '\e837'; } /* '' */
+  .icon-heartfilled:before { content: '\e838'; } /* '' */
+  .icon-highway:before { content: '\e839'; } /* '' */
+  .icon-hotel:before { content: '\e83a'; } /* '' */
+  .icon-infoicon:before { content: '\e83b'; } /* '' */
+  .icon-island:before { content: '\e83c'; } /* '' */
+  .icon-latecheckout:before { content: '\e83d'; } /* '' */
+  .icon-likeit:before { content: '\e83e'; } /* '' */
+  .icon-likeitnot:before { content: '\e83f'; } /* '' */
+  .icon-listview:before { content: '\e840'; } /* '' */
+  .icon-mapmarker:before { content: '\e841'; } /* '' */
+  .icon-menu:before { content: '\e842'; } /* '' */
+  .icon-minus:before { content: '\e843'; } /* '' */
+  .icon-cart:before { content: '\e844'; } /* '' */
+  .icon-numberofimages:before { content: '\e845'; } /* '' */
+  .icon-parking:before { content: '\e846'; } /* '' */
+  .icon-persons:before { content: '\e847'; } /* '' */
+  .icon-newspaper:before { content: '\e848'; } /* '' */
+  .icon-doublebed:before { content: '\e849'; } /* '' */
